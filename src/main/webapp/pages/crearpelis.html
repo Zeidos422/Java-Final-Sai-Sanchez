@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de Registro</title>
+
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <div class="cabecera">
+            <a class="animate__animated animate__backInLeft" href="../index.html"> <img
+                    src="../images/logo-04-pochocleras-pelis.webp" class="logo" alt="Logo de Pochocleras-Pelis"></a>
+        </div>
+
+    </header>
+
+    <main class="RegLog">
+        <div class="container-registrar">
+            <h2>Registro</h2>
+            <form method="post">
+
+                <div class="form-group-registrar">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
+                    <div class="error-message" id="nombreError"></div>
+                </div>
+
+                <div class="form-group-registrar">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
+                    <div class="error-message" id="apellidoError"></div>
+                </div>
+
+                <div class="form-group-registrar">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su E-Mail">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group-registrar">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su Contraseña">
+                    <div class="error-message" id="contrasenaError"></div>
+                </div>
+
+                <div class="form-group-registrar">
+                    <label for="fechanac">Fecha de Nacimiento:</label>
+                    <input type="text" id="fechanac" name="fechanac" placeholder="Ingrese su fecha de Nacimiento"
+                        onfocus="this.type='date'" onblur="this.type='text'">
+                    <div class="error-message" id="fechanacError"></div>
+                </div>
+
+                <div class="form-group-registrar">
+                    <label for="paisreg">Pais</label>
+                    <select name="pais" id="paisreg">
+                        <option value="" disable selected hidden>Seleccione su Pais</option>
+                        <option value="arg">Argentina</option>
+                        <option value="arg">Bahamas</option>
+                        <option value="arg">Barbados</option>
+                        <option value="arg">Bolivia</option>
+                        <option value="arg">Brasil</option>
+                        <option value="arg">Chile</option>
+                        <option value="arg">Colombia</option>
+                        <option value="arg">Costa Rica</option>
+                        <option value="arg">Ecuador</option>
+                        <option value="arg">México</option>
+                        <option value="arg">Panamá</option>
+                        <option value="arg">Paraguay</option>
+                        <option value="arg">Perú</option>
+                        <option value="arg">Venezuela</option>
+                    </select>
+                    <div class="error-message" id="paisregError"></div>
+                </div>
+
+                <div class="form-group-registrar termCond">
+                    <label id="terms" for="acepterminos">Acepto los términos y condiciones</label>
+                    <input type="checkbox" id="acepterminos" name="acepterminos">
+                    <div class="error-message" id="terminosError"></div>
+                </div>
+
+                <div class="form-group-registrar" id="botonesReg">
+                    <button class="register-button" type="submit">Registrarse</button>
+                    <a href="../pages/login.html" type="button" class="register-button">Volver</a>
+                </div>
+                <div class="ayuda">
+                    <a href="#">
+                        <small>Necesitas Ayuda?</small>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="container footer">
+        <div class="footer-menu">
+            <a href=""> <img src="../images/logo-04-pochocleras-pelis.webp" class="logo-footer"
+                    alt="Logo de Pochocleras-Pelis"></a>
+            <ul>
+                <li><a href="#">| Ingreso Administrador |</a></li>
+                <li><a href="#">| Contacto |</a></li>
+            </ul>
+            <div class="icons-branding">
+                <a href="#"><i class="fa-brands fa-square-instagram fa-fade"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter fa-shake"></i></i></a>
+            </div>
+
+        </div>
+        <p>© 2024 Pochocleras-Pelis Peliculas Online, Todos los derechos reservados. Hay 3064 películas disponibles</p>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
+    <script src="../registro.js"></script>
+
+</body>
+
+</html>

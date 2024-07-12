@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabla Pochocleras Pelis</title>
+
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <style>
+        table,
+        tbody,
+        tr {
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="cabecera">
+            <a class="animate__animated animate__backInLeft" href="../index.html"> <img
+                    src="../images/logo-04-pochocleras-pelis.webp" class="logo" alt="Logo de Pochocleras-Pelis"></a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="movies container" id="trending">
+            <h2>Final BACK-END Java</h2>
+            <div class="table-responsive">
+                <table class="table" id="pelis">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>Título</th>
+                            <th>Descripción</th>
+                            <th>Género</th>
+                            <th>Calificación</th>
+                            <th>Año</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container footer">
+        <div class="footer-menu">
+            <a href=""> <img src="../images/logo-04-pochocleras-pelis.webp" class="logo-footer"
+                    alt="Logo de Pochocleras-Pelis"></a>
+            <ul>
+                <li><a href="#">| Ingreso Administrador |</a></li>
+                <li><a href="#">| Contacto |</a></li>
+            </ul>
+            <div class="icons-branding">
+                <a href="#"><i class="fa-brands fa-square-instagram fa-fade"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter fa-shake"></i></i></a>
+            </div>
+
+        </div>
+        <p>© 2024 Pochocleras-Pelis Peliculas Online, Todos los derechos reservados. Hay 3064 películas disponibles</p>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
+    <!-- <script src="../script.js"></script> -->
+    <!-- <script src="../login.js"></script> -->
+    <script src="../js/GetRequest.js"></script>
+    <script>
+        let table = new DataTable('#pelis');
+    </script>
+
+</body>
+
+</html>

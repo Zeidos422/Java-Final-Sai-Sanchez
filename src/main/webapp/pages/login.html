@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de Login</title>
+
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="cabecera">
+            <a class="animate__animated animate__backInLeft" href="../index.html"> <img
+                    src="../images/logo-04-pochocleras-pelis.webp" class="logo" alt="Logo de Pochocleras-Pelis"></a>
+        </div>
+
+    </header>
+
+    <main class="RegLog">
+        <div class="container_login">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="post">
+                <div class="form-group_login">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" placeholder="Ingrese su usuario">
+                    <div class="error-message" id="userError"></div>
+                </div>
+                <div class="form-group_login">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+                    <div class="error-message" id="passError"></div>
+                </div>
+                <div class="form-group_login" id="botonesLog">
+                    <button type="submit" id="submit">Iniciar Sesión</button>
+                    <a href="../pages/registrar.html" type="button" class="register-button">Registrar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container footer">
+        <div class="footer-menu">
+            <a href=""> <img src="../images/logo-04-pochocleras-pelis.webp" class="logo-footer"
+                    alt="Logo de Pochocleras-Pelis"></a>
+            <ul>
+                <li><a href="#">| Ingreso Administrador |</a></li>
+                <li><a href="#">| Contacto |</a></li>
+            </ul>
+            <div class="icons-branding">
+                <a href="#"><i class="fa-brands fa-square-instagram fa-fade"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter fa-shake"></i></i></a>
+            </div>
+
+        </div>
+        <p>© 2024 Pochocleras-Pelis Peliculas Online, Todos los derechos reservados. Hay 3064 películas disponibles</p>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/cc70dc4bc7.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+    <script src="../login.js"></script>
+
+</body>
+
+</html>
